@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
 const keepAlive2 = async () => {
   console.log("running keepAlive");
   const ping = await axios
-    .get("https://reder-hax.onrender.com/")
+    .get("https://render-hax.onrender.com/")
     .catch((error) => {
       console.log(error);
     });
