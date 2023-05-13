@@ -39,7 +39,9 @@ const keepAlive2 = async () => {
 const keepAlive1 = async () => {
   console.log("running keepAlive");
   const ping = await axios
-    .get("https://disc-bot-t2.onrender.com/")
+    .get("https://disc-bot-t2.onrender.com/", {
+      responseType: 'stream',
+    })
     .catch((error) => {
       console.log(error);
     });
