@@ -27,7 +27,9 @@ app.get("/", (req, res) => {
 const keepAlive2 = async () => {
   console.log("running keepAlive");
   const ping = await axios
-    .get("https://render-hax2.onrender.com/")
+    .get("https://render-hax2.onrender.com/", {
+      responseType: 'stream',
+    })
     .catch((error) => {
       console.log(error);
     });
@@ -44,5 +46,5 @@ const keepAlive1 = async () => {
   console.log(ping.data);
 };
 
-setInterval(keepAlive1, 13 * 60 * 1000);
-setInterval(keepAlive2, 13 * 60 * 1000);
+setInterval(keepAlive1, 12 * 60 * 1000);
+setInterval(keepAlive2, 12 * 60 * 1000);
