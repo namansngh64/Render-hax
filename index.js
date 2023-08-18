@@ -63,10 +63,14 @@ const keepAlive4 = async () => {
     .catch((error) => {
       console.log(error);
     });
-  console.log(ping.data);
+  console.log("repl success");
 };
 
-setInterval(keepAlive2, 12 * 60 * 1000);
-setInterval(keepAlive4, 12 * 60 * 1000);
+setInterval(keepAlive2, 3 * 60 * 1000);
+setInterval(keepAlive4, 3 * 60 * 1000);
+
+
+// setInterval(keepAlive2, 12 * 60 * 1000);
+// setInterval(keepAlive4, 12 * 60 * 1000);
 // setInterval(keepAlive1, 12 * 60 * 1000);
 // setInterval(keepAlive3, 12 * 60 * 1000);
