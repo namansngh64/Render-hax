@@ -68,5 +68,5 @@ const keepAlive4 = async () => {
 
 setInterval(keepAlive2, 12 * 60 * 1000);
 setInterval(keepAlive4, 12 * 60 * 1000);
-setInterval(keepAlive1, 12 * 60 * 1000);
-setInterval(keepAlive3, 12 * 60 * 1000);
+// setInterval(keepAlive1, 12 * 60 * 1000);
+// setInterval(keepAlive3, 12 * 60 * 1000);
