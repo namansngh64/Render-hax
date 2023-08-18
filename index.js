@@ -66,8 +66,8 @@ const keepAlive4 = async () => {
   console.log("repl success");
 };
 
-setInterval(keepAlive2, 3 * 60 * 1000);
-setInterval(keepAlive4, 3 * 60 * 1000);
+setInterval(keepAlive2, 1 * 60 * 1000);
+setInterval(keepAlive4, 1 * 60 * 1000);
 
 
 // setInterval(keepAlive2, 12 * 60 * 1000);
