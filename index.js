@@ -59,7 +59,7 @@ const keepAlive3 = async () => {
 const keepAlive4 = async () => {
   console.log("running keepAlive for replit_bot");
   const ping = await axios
-    .get("https://discbot2.falc0n13.repl.co/")
+    .get("https://421a82ba-a2fc-4a34-ab6f-7a3d101c1389-00-3hcu6tlh5t3et.riker.replit.dev/")
     .catch((error) => {
       console.log(error);
     });
